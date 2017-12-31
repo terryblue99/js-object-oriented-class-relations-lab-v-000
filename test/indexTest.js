@@ -143,13 +143,13 @@ describe('relating a driver to a trip and a passenger', function() {
       expect(firstTrip.passengerId).to.equal(passenger.id)
     })
 
-    it('has a passenger', function() {
-      expect(firstTrip.passenger()).to.equal(passenger)
-    })
-
     it('has a driver', function() {
       expect(firstTrip.driver()).to.equal(driver)
     })
+
+    it('has a passenger', function() {
+      expect(firstTrip.passenger()).to.equal(passenger)
+    })  
   })
 
   describe('driver', function(){
@@ -174,4 +174,3 @@ describe('relating a driver to a trip and a passenger', function() {
     })
   })
 })
-
